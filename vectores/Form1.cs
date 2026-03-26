@@ -34,5 +34,25 @@ namespace vectores
                 MessageBox.Show("No se pueden cargar más datos");
             }
         }
+
+        private void btnFor_Click(object sender, EventArgs e)
+        {
+            lstPersonas.Items.Clear();
+            for (Int32 i = 0; i < INDICE; i++)
+            {
+                lstPersonas.Items.Add(Usuarios[i]);
+            }
+        }
+
+        private void btnWhile_Click(object sender, EventArgs e)
+        {
+            lstPersonas.Items.Clear();
+            Int32 i = 0;
+            while (i < INDICE)
+            {
+                lstPersonas.Items.Add(Usuarios[i]);
+                i++;
+            }
+        }
     }
 }

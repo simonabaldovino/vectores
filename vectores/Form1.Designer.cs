@@ -109,6 +109,7 @@
             this.btnFor.TabIndex = 1;
             this.btnFor.Text = "Listar con for ";
             this.btnFor.UseVisualStyleBackColor = true;
+            this.btnFor.Click += new System.EventHandler(this.btnFor_Click);
             // 
             // btnWhile
             // 
@@ -118,6 +119,7 @@
             this.btnWhile.TabIndex = 2;
             this.btnWhile.Text = "Listar con while";
             this.btnWhile.UseVisualStyleBackColor = true;
+            this.btnWhile.Click += new System.EventHandler(this.btnWhile_Click);
             // 
             // Form1
             // 
