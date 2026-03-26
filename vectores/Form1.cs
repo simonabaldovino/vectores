@@ -26,8 +26,9 @@ namespace vectores
             {
                 Usuarios[INDICE] = txtUsuarios.Text;
                 INDICE++;
-                MessageBox.Show("El dato se cargó correctamente");
+                //MessageBox.Show("El dato se cargó correctamente");
                 txtUsuarios.Text = "";
+                listar();
             }
             else 
             {
@@ -54,5 +55,15 @@ namespace vectores
                 i++;
             }
         }
+
+        private void listar()
+        {
+            lstPersonas.Items.Clear();
+            for (Int32 i = 0; i < INDICE; i++)
+            {
+                lstPersonas.Items.Add(Usuarios[i]);
+            }
+        }
     }
+
 }
